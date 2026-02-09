@@ -50,6 +50,9 @@ export const heroImage =
 export const secondaryImage =
   "https://2e9c66d285.clvaw-cdnwnd.com/88f3df218921fd92a8ae5197bc8dd791/200000022-694d2694d4/pexels-anete-lusina-5723324.jpeg?ph=2e9c66d285";
 
+export const siteLogo =
+  "https://2e9c66d285.clvaw-cdnwnd.com/88f3df218921fd92a8ae5197bc8dd791/200000003-ca7edca7f0/450/Black%20logo%20-%20no%20background.webp?ph=2e9c66d285";
+
 export const waysToHelp = [
   {
     title: "Άμεση βοήθεια",

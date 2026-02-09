@@ -1,11 +1,15 @@
+import Image from "next/image";
 import Link from "next/link";
+import { siteLogo } from "@/lib/site-data";
 
 export function SiteFooter() {
   return (
     <footer className="mt-24 bg-navy text-white">
       <div className="content-shell grid gap-10 py-14 md:grid-cols-4">
         <div>
-          <p className="font-display text-2xl font-semibold">AKOUSE MAS</p>
+          <div className="inline-flex rounded-md bg-white/90 px-3 py-2">
+            <Image src={siteLogo} alt="AKOUSE MAS" width={450} height={120} className="h-10 w-auto md:h-12" />
+          </div>
           <p className="mt-3 text-sm text-white/75">
             Μη κερδοσκοπική πρωτοβουλία πρόληψης παιδικής σεξουαλικής κακοποίησης και υποστήριξης επιζώντων.
           </p>

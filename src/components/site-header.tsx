@@ -1,8 +1,9 @@
 "use client";
 
 import { type SyntheticEvent, useEffect, useRef } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { navGroups, navItems } from "@/lib/site-data";
+import { navGroups, navItems, siteLogo } from "@/lib/site-data";
 
 export function SiteHeader() {
   const headerRef = useRef<HTMLElement | null>(null);
@@ -53,8 +54,15 @@ export function SiteHeader() {
         Ανακοίνωση: Νέα ομάδα υποστήριξης επιζώντων ξεκινά αυτόν τον μήνα.
       </div>
       <div className="content-shell flex items-center justify-between gap-4 py-4 md:grid md:grid-cols-[1fr_auto_1fr] md:items-center">
-        <Link href="/" className="font-display text-2xl font-semibold tracking-wide text-navy md:justify-self-start">
-          AKOUSE MAS
+        <Link href="/" className="md:justify-self-start" aria-label="AKOUSE MAS">
+          <Image
+            src={siteLogo}
+            alt="AKOUSE MAS"
+            width={450}
+            height={120}
+            priority
+            className="h-10 w-auto md:h-[3.25rem]"
+          />
         </Link>
 
         <details className="group md:hidden">
