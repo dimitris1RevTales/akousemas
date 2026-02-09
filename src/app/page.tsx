@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { DonationWidget } from "@/components/donation-widget";
+import { TypewriterWord } from "@/components/typewriter-word";
 import { WaysToHelpGrid } from "@/components/ways-to-help-grid";
 import {
   heroImage,
@@ -40,7 +41,17 @@ export default function HomePage() {
           <div className="relative z-10 max-w-4xl">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">AKOUSE MAS</p>
             <h1 className="mt-4 text-4xl leading-tight font-semibold text-white md:text-7xl">
-              Στήριξη και προστασία εκεί που είναι πιο αναγκαία.
+              <span>
+                <span className="text-[1em]">Στήριξη και</span>{" "}
+                <TypewriterWord
+                  words={["προστασία", "συμπαράσταση", "φροντίδα", "μέριμνα", "αγάπη"]}
+                  typingSpeed={220}
+                  deletingSpeed={150}
+                  pauseAfterType={1450}
+                  className="text-[1.20em]"
+                />
+              </span>
+              <span className="block whitespace-nowrap">εκεί που είναι πιο αναγκαία.</span>
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/90 md:text-lg">
               Άμεσες επιλογές βοήθειας, καθοδήγηση με επίκεντρο τους επιζώντες και δράσεις πρόληψης για τον τερματισμό της παιδικής σεξουαλικής
