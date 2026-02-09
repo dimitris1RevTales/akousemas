@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --sand: #f7f1e7;
+  --ink: #1f2a36;
+  --teal: #187b83;
+  --teal-deep: #155f66;
+  --clay: #c95f38;
+  --alert: #b33d2e;
+  --line: #ddd1c1;
+  --paper: #fffcf8;
+  --navy: #102336;
+  --navy-700: #17304a;
+  --gold: #f4c865;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-sand: var(--sand);
+  --color-ink: var(--ink);
+  --color-teal: var(--teal);
+  --color-teal-deep: var(--teal-deep);
+  --color-clay: var(--clay);
+  --color-alert: var(--alert);
+  --color-line: var(--line);
+  --color-paper: var(--paper);
+  --color-navy: var(--navy);
+  --color-navy-700: var(--navy-700);
+  --color-gold: var(--gold);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-spectral);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #fef6e7 0%, var(--sand) 45%, #f3eadf 100%);
+  color: var(--ink);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-spectral), serif;
+}
+
+.content-shell {
+  @apply mx-auto w-full max-w-6xl px-5 md:px-8;
+}
+
+.cta-btn {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition;
 }
