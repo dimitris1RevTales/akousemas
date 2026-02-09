@@ -15,12 +15,12 @@ const reasons = [
   {
     id: "03",
     title: "Ανάπτυξη δεξιοτήτων",
-    text: "Από επικοινωνία και οργάνωση εκδηλώσεων μέχρι περιεχόμενο και community building, θα εξελιχθείς πρακτικά.",
+    text: "Από επικοινωνία και οργάνωση εκδηλώσεων μέχρι περιεχόμενο και χτίσιμο κοινότητας, θα εξελιχθείς πρακτικά.",
   },
   {
     id: "04",
     title: "Στήριξη και καθοδήγηση",
-    text: "Λαμβάνεις onboarding και ξεκάθαρο πλαίσιο συνεργασίας ώστε να προσφέρεις με ασφάλεια και αυτοπεποίθηση.",
+    text: "Λαμβάνεις αρχική εκπαίδευση και ξεκάθαρο πλαίσιο συνεργασίας ώστε να προσφέρεις με ασφάλεια και αυτοπεποίθηση.",
   },
 ];
 
@@ -42,7 +42,7 @@ export default function VolunteerPage() {
           </video>
           <div className="absolute inset-0 bg-navy/58" />
           <div className="relative z-10 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Volunteering</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Εθελοντισμός</p>
             <h1 className="mt-4 text-4xl leading-tight font-semibold text-white md:text-6xl">Γίνε εθελοντής/εθελόντρια και κάνε τη διαφορά</h1>
             <p className="mt-5 text-base leading-relaxed text-white/90 md:text-lg">
               Γίνε μέρος της ομάδας που μετατρέπει τη σιωπή σε ενημέρωση, πρόληψη και ουσιαστική υποστήριξη για επιζώντες.
@@ -54,7 +54,7 @@ export default function VolunteerPage() {
       <section className="content-shell pt-12 md:pt-16">
         <div className="grid gap-6 lg:grid-cols-[1.1fr_1fr]">
           <article className="rounded-[32px] bg-navy p-8 text-white md:p-12">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Volunteering</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Εθελοντισμός</p>
             <h1 className="mt-4 text-4xl leading-tight font-semibold md:text-6xl">Γίνε εθελοντής/εθελόντρια και κάνε τη διαφορά</h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">
               Η AKOUSE MAS χρειάζεται ανθρώπους με ενσυναίσθηση, συνέπεια και διάθεση προσφοράς. Μαζί μπορούμε να ενισχύσουμε την
@@ -113,7 +113,7 @@ export default function VolunteerPage() {
         <article className="rounded-3xl border border-line bg-paper p-8">
           <h3 className="text-2xl font-semibold text-navy">Γενικοί εθελοντές</h3>
           <p className="mt-3 text-sm leading-relaxed text-ink/80">
-            Υποστήριξη δράσεων, οργάνωση εκδηλώσεων, διοικητική βοήθεια, social media, γραφιστική και fundraising.
+            Υποστήριξη δράσεων, οργάνωση εκδηλώσεων, διοικητική βοήθεια, μέσα κοινωνικής δικτύωσης, γραφιστική και οικονομική ενίσχυση.
           </p>
         </article>
       </section>
@@ -125,7 +125,7 @@ export default function VolunteerPage() {
         </p>
         <form className="mt-6 grid gap-4 md:grid-cols-2">
           <input placeholder="Ονοματεπώνυμο" className="rounded-xl border border-line bg-white px-4 py-3 text-sm" />
-          <input placeholder="Email" className="rounded-xl border border-line bg-white px-4 py-3 text-sm" />
+          <input placeholder="Ηλεκτρονικό ταχυδρομείο" className="rounded-xl border border-line bg-white px-4 py-3 text-sm" />
           <input placeholder="Τηλέφωνο" className="rounded-xl border border-line bg-white px-4 py-3 text-sm md:col-span-2" />
           <textarea
             placeholder="Σε ποιόν τομέα θέλεις να βοηθήσεις;"

@@ -50,3 +50,26 @@ h4 {
 .cta-btn {
   @apply inline-flex items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition;
 }
+
+@keyframes podcast-confetti-float {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate3d(var(--dot-drift, 8px), calc(var(--dot-drift, 8px) * -0.55), 0) rotate(10deg) scale(1.05);
+  }
+  55% {
+    transform: translate3d(calc(var(--dot-drift, 8px) * -0.5), var(--dot-drift, 8px), 0) rotate(-8deg) scale(0.97);
+  }
+  78% {
+    transform: translate3d(calc(var(--dot-drift, 8px) * 0.35), calc(var(--dot-drift, 8px) * 0.25), 0) rotate(6deg) scale(1.02);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  }
+}
+
+.podcast-confetti-dot {
+  animation: podcast-confetti-float 3.8s ease-in-out infinite;
+  will-change: transform;
+}

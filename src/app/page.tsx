@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { DonationWidget } from "@/components/donation-widget";
 import { WaysToHelpGrid } from "@/components/ways-to-help-grid";
 import {
   heroImage,
@@ -42,7 +43,7 @@ export default function HomePage() {
               Στήριξη και προστασία εκεί που είναι πιο αναγκαία.
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/90 md:text-lg">
-              Άμεσες επιλογές βοήθειας, survivor-first καθοδήγηση και δράσεις πρόληψης για τον τερματισμό της παιδικής σεξουαλικής
+              Άμεσες επιλογές βοήθειας, καθοδήγηση με επίκεντρο τους επιζώντες και δράσεις πρόληψης για τον τερματισμό της παιδικής σεξουαλικής
               κακοποίησης.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
@@ -65,7 +66,7 @@ export default function HomePage() {
               Στήριξη, πρόληψη και φωνή για επιζώντες παιδικής σεξουαλικής κακοποίησης
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">
-              Με survivor-first προσέγγιση, προσφέρουμε άμεσες επιλογές βοήθειας, ενημέρωση για νομική και ψυχολογική στήριξη,
+              Με προσέγγιση που βάζει στο κέντρο τους επιζώντες, προσφέρουμε άμεσες επιλογές βοήθειας, ενημέρωση για νομική και ψυχολογική στήριξη,
               και δράσεις που κινητοποιούν κοινότητες σε όλη την Ελλάδα.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
@@ -109,39 +110,15 @@ export default function HomePage() {
 
           <div className="relative z-10">
             <h2 className="max-w-4xl text-4xl leading-tight font-semibold text-white md:text-7xl">
-              Support survivors where it&apos;s needed most.
+              Στηρίξτε τους επιζώντες εκεί όπου υπάρχει η μεγαλύτερη ανάγκη.
             </h2>
 
             <article className="mx-auto mt-10 w-full max-w-xl rounded-[28px] border border-white/60 bg-white/92 p-6 text-navy shadow-2xl shadow-black/20 backdrop-blur-sm md:p-7">
               <p className="text-2xl leading-tight font-semibold md:text-[2rem]">
-                Support survivors in need. Donate now to provide them with essential treatment.
+                Στηρίξτε τους επιζώντες που έχουν ανάγκη. Κάντε δωρεά τώρα για να τους προσφέρετε την απαραίτητη θεραπεία.
               </p>
 
-              <div className="mt-6 rounded-2xl border border-slate-200 bg-white p-4">
-                <p className="text-sm font-semibold text-slate-700">Choose amount</p>
-                <div className="mt-3 grid grid-cols-2 gap-2 rounded-xl bg-slate-100 p-1">
-                  <button type="button" className="rounded-lg border border-indigo-400 bg-white px-3 py-2 text-sm font-semibold text-indigo-700">
-                    One-time
-                  </button>
-                  <button type="button" className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-700">
-                    Monthly
-                  </button>
-                </div>
-
-                <div className="mt-3 grid grid-cols-3 gap-2">
-                  {["€500", "€250", "€150", "€50", "€25", "€10"].map((amount) => (
-                    <button key={amount} type="button" className="rounded-lg bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-200">
-                      {amount}
-                    </button>
-                  ))}
-                </div>
-
-                <div className="mt-3 rounded-lg bg-slate-100 px-3 py-2 text-sm text-slate-600">€ Other</div>
-
-                <button type="button" className="mt-4 w-full rounded-lg bg-indigo-500 px-4 py-3 text-sm font-semibold text-white hover:bg-indigo-600">
-                  Continue
-                </button>
-              </div>
+              <DonationWidget />
             </article>
           </div>
         </div>
@@ -167,7 +144,7 @@ export default function HomePage() {
       <section className="content-shell mt-14">
         <div className="mb-6 flex items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-clay">Get involved</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-clay">Πάρε μέρος</p>
             <h2 className="mt-2 text-3xl font-semibold text-navy md:text-4xl">Τέσσερις τρόποι να στηρίξεις την αποστολή</h2>
           </div>
           <Link href="/draseis-actions" className="text-sm font-semibold text-teal hover:underline">
@@ -181,7 +158,7 @@ export default function HomePage() {
         <div className="mb-5 flex items-end justify-between gap-4">
           <h2 className="text-3xl font-semibold">Ερχόμενες δράσεις και πρωτοβουλίες</h2>
           <Link href="/draseis-actions" className="text-sm font-semibold text-gold hover:underline">
-            See all
+            Δες όλα
           </Link>
         </div>
         <div className="grid gap-4 md:grid-cols-2">
@@ -214,7 +191,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-black/45" />
           <div className="relative z-10 flex flex-wrap items-end justify-between gap-5">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Video section</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Ενότητα βίντεο</p>
               <h2 className="mt-3 max-w-2xl text-3xl font-semibold text-white md:text-4xl">
                 Μαζί χτίζουμε ασφάλεια, φωνή και πραγματικές διαδρομές υποστήριξης.
               </h2>
@@ -228,7 +205,7 @@ export default function HomePage() {
 
       <section className="content-shell mt-14">
         <div className="mb-6 flex items-end justify-between gap-4">
-          <h2 className="text-3xl font-semibold text-navy md:text-4xl">Inspiring stories & resources</h2>
+          <h2 className="text-3xl font-semibold text-navy md:text-4xl">Ιστορίες έμπνευσης και χρήσιμο υλικό</h2>
           <Link href="/oi-doyleies-mas" className="text-sm font-semibold text-teal hover:underline">
             Βάση γνώσης
           </Link>

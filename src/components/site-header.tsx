@@ -50,9 +50,6 @@ export function SiteHeader() {
 
   return (
     <header ref={headerRef} className="sticky top-0 z-40 border-b border-white/70 bg-white/45 text-navy backdrop-blur-2xl">
-      <div className="bg-gold px-5 py-2 text-center text-xs font-semibold tracking-wide text-navy md:text-sm">
-        Ανακοίνωση: Νέα ομάδα υποστήριξης επιζώντων ξεκινά αυτόν τον μήνα.
-      </div>
       <div className="content-shell flex items-center justify-between gap-4 py-4 md:grid md:grid-cols-[1fr_auto_1fr] md:items-center">
         <Link href="/" className="md:justify-self-start" aria-label="AKOUSE MAS">
           <Image
@@ -141,9 +138,6 @@ export function SiteHeader() {
         </div>
 
         <div className="hidden md:block" aria-hidden="true" />
-      </div>
-      <div className="border-t border-white/10 bg-alert px-5 py-2 text-center text-xs font-semibold tracking-wide text-white">
-        Αν υπάρχει άμεσος κίνδυνος, κάλεσε τώρα το 112
       </div>
     </header>
   );

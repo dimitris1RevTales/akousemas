@@ -77,7 +77,7 @@ function TiltCard({ item }: { item: WayToHelp }) {
           <h3 className="text-xl font-semibold text-navy">{item.title}</h3>
           <p className="mt-2 text-sm text-ink/80">{item.description}</p>
           <Link href={item.href} className="mt-4 inline-block text-sm font-semibold text-clay hover:underline">
-            Learn more
+            Μάθε περισσότερα
           </Link>
         </div>
       </article>

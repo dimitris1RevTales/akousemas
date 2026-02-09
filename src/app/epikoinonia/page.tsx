@@ -10,7 +10,7 @@ export default function ContactPage() {
       />
       <section className="content-shell mt-10 grid gap-5 md:grid-cols-3">
         <article className="rounded-2xl border border-line bg-paper p-6">
-          <p className="text-xs font-semibold uppercase tracking-wider text-clay">Email</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-clay">Ηλεκτρονικό ταχυδρομείο</p>
           <p className="mt-3 text-lg font-semibold">akousemas@protonmail.com</p>
         </article>
         <article className="rounded-2xl border border-line bg-paper p-6">

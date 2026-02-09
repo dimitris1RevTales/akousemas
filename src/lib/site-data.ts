@@ -6,14 +6,14 @@ export const navGroups = [
     items: [
       { href: "/schetika-me-emas", label: "Αποστολή & Όραμα" },
       { href: "/diafaneia", label: "Διαφάνεια" },
-      { href: "/podcast", label: "Podcast" },
+      { href: "/podcast", label: "Ποντκαστ" },
     ],
   },
   {
     title: "Υποστήριξη",
     items: [
       { href: "/amesi-voitheia", label: "Άμεση βοήθεια" },
-      { href: "/ai-symvoulos", label: "AI Σύμβουλος" },
+      { href: "/ai-symvoulos", label: "Σύμβουλος ΤΝ" },
       { href: "/dorees", label: "Δωρεές" },
       { href: "/antigrafi-apo-epizon", label: "Επιζών/Επιζώσα" },
       { href: "/oi-doyleies-mas", label: "Γνώση CSA" },
@@ -40,7 +40,7 @@ export const hotlineContacts = [
 export const impactStats = [
   { value: "7+", label: "βασικές ενότητες υποστήριξης" },
   { value: "24/7", label: "πρόσβαση σε κρίσιμες πληροφορίες" },
-  { value: "100%", label: "survivor-first σχεδιασμός" },
+  { value: "100%", label: "σχεδιασμός με επίκεντρο τους επιζώντες" },
   { value: "1", label: "κοινότητα που ακούει" },
 ];
 
@@ -61,7 +61,7 @@ export const waysToHelp = [
     image: secondaryImage,
   },
   {
-    title: "AI σύμβουλος",
+    title: "Σύμβουλος ΤΝ",
     description: "Δομημένη ενημέρωση για νομικές επιλογές, ψυχολόγο και επόμενα βήματα.",
     href: "/ai-symvoulos",
     image:
@@ -75,7 +75,7 @@ export const waysToHelp = [
   },
   {
     title: "Εθελοντισμός",
-    description: "Γίνε ενεργό μέλος σε social, περιεχόμενο, εκδηλώσεις και υποστήριξη.",
+    description: "Γίνε ενεργό μέλος σε μέσα κοινωνικής δικτύωσης, περιεχόμενο, εκδηλώσεις και υποστήριξη.",
     href: "/synergasia",
     image:
       "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=1200",
@@ -96,7 +96,7 @@ export const initiatives = [
     href: "/draseis-actions",
   },
   {
-    name: "Podcast: Σπάμε τη Σιωπή",
+    name: "Ποντκαστ: Σπάμε τη Σιωπή",
     when: "Νέο επεισόδιο κάθε μήνα",
     details: "Μαρτυρίες, ειδικοί και πρακτικά εργαλεία υποστήριξης.",
     href: "/podcast",
@@ -139,7 +139,7 @@ export const resources = [
     body: [
       "Οι θύτες συχνά χρησιμοποιούν σταδιακή προσέγγιση και ψυχολογικό έλεγχο πριν από την κακοποίηση.",
       "Μπορεί να είναι πρόσωπα εμπιστοσύνης από οικογενειακό, σχολικό ή κοινωνικό περιβάλλον.",
-      "Η ενημέρωση για τα μοτίβα grooming βοηθά γονείς, εκπαιδευτικούς και κοινότητες να παρεμβαίνουν νωρίς.",
+      "Η ενημέρωση για τα μοτίβα αποπλάνησης βοηθά γονείς, εκπαιδευτικούς και κοινότητες να παρεμβαίνουν νωρίς.",
     ],
   },
   {
@@ -186,22 +186,107 @@ export const stories = [
 
 export const podcastEpisodes = [
   {
-    title: "Πώς μιλάμε σε ένα παιδί για όρια",
-    duration: "23 λεπτά",
+    episode: "Επεισόδιο 24",
+    date: "03 Φεβ 2026",
+    duration: "34 λεπτά",
+    title: "Όταν ένα παιδί αποκαλύπτει κακοποίηση: η πρώτη αντίδραση που προστατεύει",
     summary:
-      "Πρακτικές φράσεις για γονείς και φροντιστές ώστε το παιδί να κατανοεί το δικαίωμα στο σώμα του.",
+      "Τι λέμε, τι αποφεύγουμε και πώς χτίζουμε αίσθημα ασφάλειας στα πρώτα λεπτά μιας αποκάλυψης.",
+    image:
+      "https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    watchUrl: "https://www.youtube.com/",
   },
   {
-    title: "Επιζώντες: από τη σιωπή στη φωνή",
+    episode: "Επεισόδιο 23",
+    date: "27 Ιαν 2026",
+    duration: "29 λεπτά",
+    title: "Γονείς και όρια: καθημερινές φράσεις που προλαμβάνουν τη σιωπή",
+    summary:
+      "Συγκεκριμένα παραδείγματα για οικογένειες που θέλουν να μιλούν καθαρά για όρια, συναίνεση και εμπιστοσύνη.",
+    image:
+      "https://images.pexels.com/photos/5723324/pexels-photo-5723324.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    watchUrl: "https://www.youtube.com/",
+  },
+  {
+    episode: "Επεισόδιο 22",
+    date: "20 Ιαν 2026",
+    duration: "36 λεπτά",
+    title: "Νομικές επιλογές χωρίς σύγχυση: τι κάνουμε μέσα στις πρώτες 24 ώρες",
+    summary:
+      "Οδηγός βήμα-βήμα για αναφορά, τεκμηρίωση και τα βασικά δικαιώματα επιζώντων στην Ελλάδα.",
+    image:
+      "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    watchUrl: "https://www.youtube.com/",
+  },
+  {
+    episode: "Επεισόδιο 21",
+    date: "13 Ιαν 2026",
     duration: "31 λεπτά",
+    title: "Από τη ντροπή στη διεκδίκηση: διαδρομές επούλωσης για επιζώντες",
     summary:
-      "Συζήτηση για την πορεία θεραπείας, τη ντροπή και την αξία της κοινότητας.",
+      "Πρακτικές για ρύθμιση άγχους, επαναφορά ορίων και σύνδεση με υποστηρικτικά δίκτυα.",
+    image:
+      "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=1400",
   },
   {
-    title: "Νομικές επιλογές χωρίς σύγχυση",
-    duration: "27 λεπτά",
+    episode: "Επεισόδιο 20",
+    date: "06 Ιαν 2026",
+    duration: "25 λεπτά",
+    title: "Ψηφιακή ασφάλεια για παιδιά: αποπλάνηση, προειδοποιητικά σημάδια και πρόληψη",
     summary:
-      "Εισαγωγικός οδηγός για τα πρώτα 24ωρα μετά από μια αποκάλυψη κακοποίησης.",
+      "Πώς εντοπίζουμε ύποπτη διαδικτυακή συμπεριφορά και πώς εκπαιδεύουμε παιδιά χωρίς φόβο.",
+    image:
+      "https://images.pexels.com/photos/7944148/pexels-photo-7944148.jpeg?auto=compress&cs=tinysrgb&w=1400",
+  },
+  {
+    episode: "Επεισόδιο 19",
+    date: "30 Δεκ 2025",
+    duration: "28 λεπτά",
+    title: "Σχολεία και προστασία: πρωτόκολλα που πρέπει να υπάρχουν",
+    summary:
+      "Τι χρειάζεται ένα σχολικό περιβάλλον για να ανταποκρίνεται υπεύθυνα σε ενδείξεις κακοποίησης.",
+    image:
+      "https://images.pexels.com/photos/8617742/pexels-photo-8617742.jpeg?auto=compress&cs=tinysrgb&w=1400",
+  },
+  {
+    episode: "Επεισόδιο 18",
+    date: "23 Δεκ 2025",
+    duration: "33 λεπτά",
+    title: "Στήριξη χωρίς πίεση: πώς στεκόμαστε δίπλα σε επιζώντα",
+    summary:
+      "Λέξεις και στάσεις που ενδυναμώνουν, χωρίς να αφαιρούν έλεγχο από το άτομο που μοιράζεται το τραύμα.",
+    image:
+      "https://images.pexels.com/photos/6147381/pexels-photo-6147381.jpeg?auto=compress&cs=tinysrgb&w=1400",
+  },
+  {
+    episode: "Επεισόδιο 17",
+    date: "16 Δεκ 2025",
+    duration: "30 λεπτά",
+    title: "Κοινότητες που ακούν: πώς οργανώνεται μια τοπική γραμμή υποστήριξης",
+    summary:
+      "Τι μαθαίνουμε από συνεργασίες με ψυχολόγους, νομικούς και εθελοντές στην πράξη.",
+    image:
+      "https://images.pexels.com/photos/3184428/pexels-photo-3184428.jpeg?auto=compress&cs=tinysrgb&w=1400",
+  },
+  {
+    episode: "Επεισόδιο 16",
+    date: "09 Δεκ 2025",
+    duration: "27 λεπτά",
+    title: "Δυσκολία ύπνου, άγχος, θυμός: συχνές μετατραυματικές αντιδράσεις",
+    summary:
+      "Αναγνωρίζουμε συμπτώματα και συζητάμε ασφαλή πρώτα βήματα για ψυχολογική υποστήριξη.",
+    image:
+      "https://images.pexels.com/photos/3807738/pexels-photo-3807738.jpeg?auto=compress&cs=tinysrgb&w=1400",
+  },
+  {
+    episode: "Επεισόδιο 15",
+    date: "02 Δεκ 2025",
+    duration: "32 λεπτά",
+    title: "Γιατί τα παιδιά δεν μιλούν πάντα άμεσα και τι σημαίνει αυτό για τους ενήλικες",
+    summary:
+      "Καταρρίπτουμε μύθους για τη σιωπή και εξηγούμε πώς χτίζεται σταδιακά η εμπιστοσύνη.",
+    image:
+      "https://images.pexels.com/photos/6953869/pexels-photo-6953869.jpeg?auto=compress&cs=tinysrgb&w=1400",
   },
 ];
 

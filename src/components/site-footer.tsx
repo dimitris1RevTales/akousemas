@@ -24,7 +24,7 @@ export function SiteFooter() {
             Διαφάνεια
           </Link>
           <Link href="/podcast" className="block text-white/80 hover:text-white">
-            Podcast
+            Ποντκαστ
           </Link>
         </div>
 
@@ -34,7 +34,7 @@ export function SiteFooter() {
             Άμεση βοήθεια
           </Link>
           <Link href="/ai-symvoulos" className="block text-white/80 hover:text-white">
-            AI σύμβουλος
+            Σύμβουλος ΤΝ
           </Link>
           <Link href="/oi-doyleies-mas" className="block text-white/80 hover:text-white">
             Βάση γνώσης
@@ -43,7 +43,7 @@ export function SiteFooter() {
 
         <div className="space-y-2 text-sm">
           <p className="font-semibold text-gold">Επικοινωνία</p>
-          <p className="text-white/80">Thessaloniki, Greece</p>
+          <p className="text-white/80">Θεσσαλονίκη, Ελλάδα</p>
           <p className="text-white/80">+30 697 424 4842</p>
           <p className="text-white/80">akousemas@protonmail.com</p>
           <div className="pt-2">
