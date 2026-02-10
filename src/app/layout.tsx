@@ -3,7 +3,9 @@ import { Manrope, Noto_Serif } from "next/font/google";
 import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { Agentation } from "agentation";
 import "./globals.css";
+
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -47,6 +49,7 @@ export default function RootLayout({
             Χρειάζομαι βοήθεια τώρα
           </Link>
         </div>
+        {process.env.NODE_ENV === "development" && <Agentation />}
       </body>
     </html>
   );

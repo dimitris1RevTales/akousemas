@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { DonationWidget } from "@/components/donation-widget";
+import { StickyDonationBar } from "@/components/sticky-donation-bar";
 import { TypewriterWord } from "@/components/typewriter-word";
 import { WaysToHelpGrid } from "@/components/ways-to-help-grid";
 import {
@@ -38,9 +38,9 @@ export default function HomePage() {
             />
           </video>
           <div className="absolute inset-0 bg-navy/60" />
-          <div className="relative z-10 max-w-4xl">
+          <div className="relative z-10 w-full max-w-none">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">AKOUSE MAS</p>
-            <h1 className="mt-4 text-4xl leading-tight font-semibold text-white md:text-7xl">
+            <h1 className="mt-4 max-w-4xl text-4xl leading-tight font-semibold text-white md:text-7xl">
               <span>
                 <span className="text-[1em]">Στήριξη και</span>{" "}
                 <TypewriterWord
@@ -53,18 +53,11 @@ export default function HomePage() {
               </span>
               <span className="block whitespace-nowrap">εκεί που είναι πιο αναγκαία.</span>
             </h1>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/90 md:text-lg">
-              Άμεσες επιλογές βοήθειας, καθοδήγηση με επίκεντρο τους επιζώντες και δράσεις πρόληψης για τον τερματισμό της παιδικής σεξουαλικής
-              κακοποίησης.
+            <p className="mt-5 w-full max-w-none text-xl leading-[2] text-white/90 md:text-2xl md:leading-[2.05]">
+              Η «Άκουσέ Μας» είναι μια φιλανθρωπική οργάνωση αφιερωμένη στην καταπολέμηση της παιδικής σεξουαλικής κακοποίησης και στην υποστήριξη
+              των επιζώντων. Στόχος μας είναι η ενημέρωση, η ευαισθητοποίηση και η πρόληψη, προσφέροντας παράλληλα προγράμματα αυτοβοήθειας για
+              ενήλικες επιζώντες.
             </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Link href="/amesi-voitheia" className="cta-btn bg-alert text-white hover:bg-alert/90">
-                Χρειάζομαι βοήθεια τώρα
-              </Link>
-              <Link href="/dorees" className="cta-btn bg-gold text-navy hover:bg-gold/90">
-                Στήριξε οικονομικά
-              </Link>
-            </div>
           </div>
         </div>
       </section>
@@ -95,6 +88,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="content-shell">
+        <StickyDonationBar />
+      </section>
+
       <section className="content-shell mt-10 grid gap-4 md:grid-cols-4">
         {impactStats.map((stat) => (
           <article key={stat.label} className="rounded-2xl border border-line bg-paper p-5 text-center">
@@ -102,37 +99,6 @@ export default function HomePage() {
             <p className="mt-2 text-sm text-ink/80">{stat.label}</p>
           </article>
         ))}
-      </section>
-
-      <section className="content-shell mt-14">
-        <div className="relative overflow-hidden rounded-[34px] border border-white/30 bg-navy/70 px-6 py-12 md:px-10 md:py-16">
-          <video
-            className="absolute inset-0 h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            aria-hidden="true"
-          >
-            <source src="https://cdn.coverr.co/videos/coverr-fog-over-the-mountains-1579/1080p.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-navy/55" />
-
-          <div className="relative z-10">
-            <h2 className="max-w-4xl text-4xl leading-tight font-semibold text-white md:text-7xl">
-              Στηρίξτε τους επιζώντες εκεί όπου υπάρχει η μεγαλύτερη ανάγκη.
-            </h2>
-
-            <article className="mx-auto mt-10 w-full max-w-xl rounded-[28px] border border-white/60 bg-white/92 p-6 text-navy shadow-2xl shadow-black/20 backdrop-blur-sm md:p-7">
-              <p className="text-2xl leading-tight font-semibold md:text-[2rem]">
-                Στηρίξτε τους επιζώντες που έχουν ανάγκη. Κάντε δωρεά τώρα για να τους προσφέρετε την απαραίτητη θεραπεία.
-              </p>
-
-              <DonationWidget />
-            </article>
-          </div>
-        </div>
       </section>
 
       <section className="content-shell mt-12 grid gap-6 lg:grid-cols-[1fr_1.1fr]">
